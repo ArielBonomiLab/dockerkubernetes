@@ -9,15 +9,17 @@ data:
   username: root
   password: root
   cursos_url: msvc-cursos:8002
+  msvc-usuarios: msvc-usuarios:8001
 ---
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: msvc-cursos
 data:
-  port: "8001"
+  port: "8002"
   db_host: postgres14:5432
   database: cursos
   username: postgres
   password: root
-  usuarios_url: msvc-usuarios:8002
+  usuarios_url: msvc-usuarios:8001
+  msvc-cursos: msvc-cursos:8002
